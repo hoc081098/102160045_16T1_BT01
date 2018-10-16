@@ -14,48 +14,48 @@ using namespace std;
 
 class Book {
 private:
-	string id_number;
-	string name;
-	int published_year;
-	int number;
-	bool state;
+  string id_number;
+  string name;
+  int published_year;
+  int number;
+  bool state;
 
-	static bool check_id_elem(const string &s);
+  static bool check_id_elem(const string &s);
 
-	static void check_id(const string &id_number);
+  static void check_id(const string &id_number);
 
-	static void check_published_year(int published_year);
+  static void check_published_year(int published_year);
 
-	static void check_number(int number);
+  static void check_number(int number);
 
 public:
 
-	explicit Book(const string &id_number = "100000000", const string &name = "", int published_year = 1000,
-		int number = 0);
+  explicit Book(const string &id_number = "100000000", const string &name = "", int published_year = 1000,
+    int number = 0);
 
-	const string &get_id_number() const;
+  const string &get_id_number() const;
 
-	void set_id_number(const string &id_number);
+  void set_id_number(const string &id_number);
 
-	const string &get_name() const;
+  const string &get_name() const;
 
-	void set_name(const string &name);
+  void set_name(const string &name);
 
-	const int &get_published_year() const;
+  const int &get_published_year() const;
 
-	void set_published_year(int published_year);
+  void set_published_year(int published_year);
 
-	const int &get_number() const;
+  const int &get_number() const;
 
-	void set_number(int number);
+  void set_number(int number);
 
-	bool is_state() const;
+  bool is_state() const;
 
-	friend ostream &operator<<(ostream &os, const Book &book);
+  friend ostream &operator<<(ostream &os, const Book &book);
 
-	friend istream &operator>>(istream &is, Book &book);
+  friend istream &operator>>(istream &is, Book &book);
 
-	void update();
+  void update();
 
 };
 

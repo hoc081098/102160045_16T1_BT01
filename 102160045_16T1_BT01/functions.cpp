@@ -27,11 +27,11 @@ const int &select_number(const Book &b) { return b.get_number(); }
 const int &select_published_year(const Book &b) { return b.get_published_year(); }
 
 bool compare_book_by_published_year_ascending(const Book &l, const Book &r) {
-	return l.get_published_year() < r.get_published_year();
+  return l.get_published_year() < r.get_published_year();
 }
 
 bool compare_book_by_published_year_descending(const Book &l, const Book &r) {
-	return l.get_published_year() > r.get_published_year();
+  return l.get_published_year() > r.get_published_year();
 }
 
 bool compare_int_ascending(const int &a, const int &b) { return a < b; }
